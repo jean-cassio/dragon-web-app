@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import api from "@/services/api";
 
 import LoadingScreen from "@/components/LoadingScreen";
-import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
+import PrimaryButton from "@/components/PrimaryButton";
 import Table from "@/components/Table";
 import PageHeader from "@/components/PageHeader";
 import { toast } from "react-toastify";

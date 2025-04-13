@@ -4,7 +4,7 @@ const Table = ({
   maxWidth = "500px",
   columns = [],
   data = [],
-  renderCell = [],
+  renderCell = (value) => value,
 }) => {
   return (
     <table className={styles.table} style={{ "--max-width": maxWidth }}>
@@ -22,9 +22,7 @@ const Table = ({
           <tr key={rowIndex}>
             {columns.map((col) => (
               <td className={styles.td} key={col.key}>
-                {renderCell
-                  ? renderCell(row[col.key], col.key, row)
-                  : row[col.key]}
+                {renderCell(row[col.key], col.key, row)}
               </td>
             ))}
           </tr>

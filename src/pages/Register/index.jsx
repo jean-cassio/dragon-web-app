@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 import Input from "@/components/Input";
 import Card from "@/components/Card";
-import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
+import PrimaryButton from "@/components/PrimaryButton";
 import LoadingScreen from "@/components/LoadingScreen";
 import PageHeader from "@/components/PageHeader";
 

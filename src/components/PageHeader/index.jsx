@@ -1,7 +1,7 @@
 import styles from "./PageHeader.module.css";
 import { Link } from "react-router-dom";
 
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import PrimaryButton from "../PrimaryButton";
 
 const PageHeader = ({ title, buttonText, route }) => {
   return (
