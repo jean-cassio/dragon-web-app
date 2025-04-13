@@ -89,9 +89,9 @@ const Home = () => {
                   return (
                     <div className={styles.actions}>
                       <PrimaryButton
-                        bgColor="#1640D6"
-                        borderColor="#1640D6"
-                        borderHoverColor="#001B79"
+                        bgColor="var(--light-blue)"
+                        borderColor="var(--light-blue)"
+                        borderHoverColor="var(--dark-blue)"
                         onClick={() => navigate(`/details/${row.id}`)}
                       >
                         Ver
@@ -99,15 +99,15 @@ const Home = () => {
                       <PrimaryButton
                         bgColor="var(--yellow)"
                         borderColor="var(--yellow)"
-                        borderHoverColor="#EB5B00"
+                        borderHoverColor="var(--orange)"
                         onClick={() => navigate(`/register/${row.id}`)}
                       >
                         Editar
                       </PrimaryButton>
                       <PrimaryButton
-                        bgColor="#D84040"
-                        borderColor="#D84040"
-                        borderHoverColor="#A31D1D"
+                        bgColor="var(--light-red)"
+                        borderColor="var(--light-red)"
+                        borderHoverColor="var(--dark-red)"
                         onClick={() => deleteDragon(row.id)}
                       >
                         Excluir
